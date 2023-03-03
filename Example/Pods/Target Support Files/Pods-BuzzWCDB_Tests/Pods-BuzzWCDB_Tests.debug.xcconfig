@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BuzzWCDB" "${PODS_CONFIGURATION_BUILD_DIR}/HandyJSON" "${PODS_CONFIGURATION_BUILD_DIR}/SQLiteRepairKit" "${PODS_CONFIGURATION_BUILD_DIR}/WCDBOptimizedSQLCipher"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BuzzWCDB" "${PODS_CONFIGURATION_BUILD_DIR}/SQLiteRepairKit" "${PODS_CONFIGURATION_BUILD_DIR}/WCDBOptimizedSQLCipher"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BuzzWCDB/WCDBSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/HandyJSON/HandyJSON.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SQLiteRepairKit/sqliterk.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/WCDBOptimizedSQLCipher/sqlcipher.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -l"c++" -l"z" -framework "Foundation" -framework "HandyJSON" -framework "Security" -framework "WCDBSwift" -framework "sqlcipher" -framework "sqliterk"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BuzzWCDB/WCDBSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SQLiteRepairKit/sqliterk.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/WCDBOptimizedSQLCipher/sqlcipher.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -l"c++" -l"z" -framework "Foundation" -framework "Security" -framework "WCDBSwift" -framework "sqlcipher" -framework "sqliterk"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

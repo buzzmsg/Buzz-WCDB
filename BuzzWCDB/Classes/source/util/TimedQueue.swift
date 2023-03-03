@@ -62,8 +62,9 @@ final class TimedQueue<Key: Hashable> {
             
             
             // origin code
-//            list.remove(at: map[index].value)
-//            map.remove(at: index)
+            //            list.remove(at: map[index].value)
+            //            map.remove(at: index)
+        }
     }
 
     func wait(untilExpired onExpired: (Key) -> Void) {
