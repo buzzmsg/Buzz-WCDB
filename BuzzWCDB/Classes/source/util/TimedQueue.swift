@@ -52,15 +52,18 @@ final class TimedQueue<Key: Hashable> {
         let signal = list.isEmpty
 
         if let index = map.index(forKey: key) {
-            list.remove(at: map[index].value)
+            
+            // fix crash code: list is empty, index is 0, out of index range!! 2022-08-12
+            let c = map[index].value
+            if c < list.count {
+                list.remove(at: map[index].value)
+            }
             map.remove(at: index)
-        }
-
-        list.append((key, SteadyClock.now()+delay))
-        map[key] = list.startIndex
-        if signal {
-            conditionLock.signal()
-        }
+            
+            
+            // origin code
+//            list.remove(at: map[index].value)
+//            map.remove(at: index)
     }
 
     func wait(untilExpired onExpired: (Key) -> Void) {
