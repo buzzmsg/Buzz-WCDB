@@ -18,16 +18,16 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-                      The WeChat Database, for Swift. (If you want to use WCDB for Objective-C, see the "WCDB" pod.)
+                      The BuzzMsg Database, for Swift. (If you want to use WCDB for Objective-C, see the "WCDB" pod.)
 
                       WCDB is an efficient, complete, easy-to-use mobile database framework used in the WeChat application.
-                      It can be a replacement for Core Data, SQLite & FMDB.
+                      It can be a replacement for Core Data.
                        DESC
 
   s.homepage         = 'https://github.com/buzzmsg/Buzz-WCDB'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'admin@buzzmsg.com' => 'li437277219@gmail.com' }
+  s.author           = { 'buzzmsg' => 'admin@buzzmsg.com' }
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.9"
   s.watchos.deployment_target = "2.0"
@@ -62,6 +62,5 @@ Pod::Spec.new do |s|
   s.swift_version = '5'
   s.dependency 'WCDBOptimizedSQLCipher', '~> 1.3.0'
   s.dependency 'SQLiteRepairKit', '~> 1.3.0'
-  s.dependency 'HandyJSON', '~> 5.0.2'
 
 end
