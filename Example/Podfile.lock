@@ -1,0 +1,16 @@
+PODS:
+  - BuzzWCDB (0.1.0)
+
+DEPENDENCIES:
+  - BuzzWCDB (from `../`)
+
+EXTERNAL SOURCES:
+  BuzzWCDB:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BuzzWCDB: 90e610ffec0d2bb8af5bf8fef660ac1231f312d4
+
+PODFILE CHECKSUM: c5d2f47df741b360768fe2405fe6106877cae281
+
+COCOAPODS: 1.11.2

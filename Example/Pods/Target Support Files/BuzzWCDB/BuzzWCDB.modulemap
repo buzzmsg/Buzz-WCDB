@@ -1,0 +1,6 @@
+framework module BuzzWCDB {
+  umbrella header "BuzzWCDB-umbrella.h"
+
+  export *
+  module * { export * }
+}
