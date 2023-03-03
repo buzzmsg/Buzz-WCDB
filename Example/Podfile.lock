@@ -1,15 +1,31 @@
 PODS:
-  - BuzzWCDB (0.1.0)
+  - BuzzWCDB (0.0.1):
+    - HandyJSON (~> 5.0.2)
+    - SQLiteRepairKit (~> 1.3.0)
+    - WCDBOptimizedSQLCipher (~> 1.3.0)
+  - HandyJSON (5.0.2)
+  - SQLiteRepairKit (1.3.0):
+    - WCDBOptimizedSQLCipher (~> 1.3.0)
+  - WCDBOptimizedSQLCipher (1.3.0)
 
 DEPENDENCIES:
   - BuzzWCDB (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - HandyJSON
+    - SQLiteRepairKit
+    - WCDBOptimizedSQLCipher
 
 EXTERNAL SOURCES:
   BuzzWCDB:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BuzzWCDB: 90e610ffec0d2bb8af5bf8fef660ac1231f312d4
+  BuzzWCDB: afc63666785849b9dcf131afcc1659cb6e0feec4
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  SQLiteRepairKit: a66145aadae91886c800f75e16f5cc6476af1a93
+  WCDBOptimizedSQLCipher: fc5d49fe6761e54aad29e88da01b6fc1283e5759
 
 PODFILE CHECKSUM: c5d2f47df741b360768fe2405fe6106877cae281
 

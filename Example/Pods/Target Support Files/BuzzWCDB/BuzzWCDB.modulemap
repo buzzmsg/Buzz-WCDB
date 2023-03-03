@@ -1,4 +1,4 @@
-framework module BuzzWCDB {
+framework module WCDBSwift {
   umbrella header "BuzzWCDB-umbrella.h"
 
   export *

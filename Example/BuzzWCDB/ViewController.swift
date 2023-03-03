@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WCDBSwift
 
 class ViewController: UIViewController {
 

@@ -28,13 +28,29 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'admin@buzzmsg.com' => 'li437277219@gmail.com' }
+  s.ios.deployment_target = "8.0"
+  s.osx.deployment_target = "10.9"
+  s.watchos.deployment_target = "2.0"
+  s.tvos.deployment_target = "9.0"
   s.source           = { :git => 'https://github.com/buzzmsg/Buzz-WCDB.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.module_name = "WCDBSwift"
 
   s.ios.deployment_target = '10.0'
-
+  s.requires_arc = true
   s.source_files = 'BuzzWCDB/Classes/**/*'
-  
+  s.pod_target_xcconfig = {
+    "GCC_PREPROCESSOR_DEFINITIONS" => "SQLITE_HAS_CODEC WCDB_BUILTIN_SQLCIPHER",
+    'SWIFT_WHOLE_MODULE_OPTIMIZATION' => 'YES',
+    'APPLICATION_EXTENSION_API_ONLY' => 'YES',
+    "HEADER_SEARCH_PATHS" => "${PODS_ROOT}/WCDBSwift",
+    "LIBRARY_SEARCH_PATHS[sdk=macosx*]" => "$(SDKROOT)/usr/lib/system",
+    "OTHER_SWIFT_FLAGS[config=Release][sdk=iphonesimulator*]" => "-D WCDB_IOS",
+    "OTHER_SWIFT_FLAGS[config=Release][sdk=iphoneos*]" => "-D WCDB_IOS",
+    "OTHER_SWIFT_FLAGS[config=Debug]" => "-D DEBUG",
+    "OTHER_SWIFT_FLAGS[config=Debug][sdk=iphonesimulator*]" => "-D WCDB_IOS -D DEBUG",
+    "OTHER_SWIFT_FLAGS[config=Debug][sdk=iphoneos*]" => "-D WCDB_IOS -D DEBUG",
+  }
   # s.resource_bundles = {
   #   'BuzzWCDB' => ['BuzzWCDB/Assets/*.png']
   # }
@@ -43,8 +59,9 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 
-  wcdb.swift_version = '5'
-  wcdb.dependency 'WCDBOptimizedSQLCipher', '~> 1.3.0'
-  wcdb.dependency 'SQLiteRepairKit', '~> 1.3.0'
+  s.swift_version = '5'
+  s.dependency 'WCDBOptimizedSQLCipher', '~> 1.3.0'
+  s.dependency 'SQLiteRepairKit', '~> 1.3.0'
+  s.dependency 'HandyJSON', '~> 5.0.2'
 
 end

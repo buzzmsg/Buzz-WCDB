@@ -10,7 +10,9 @@
 #endif
 #endif
 
+#import "SQLite-Bridging.h"
+#import "WCDB-Bridging.h"
 
-FOUNDATION_EXPORT double BuzzWCDBVersionNumber;
-FOUNDATION_EXPORT const unsigned char BuzzWCDBVersionString[];
+FOUNDATION_EXPORT double WCDBSwiftVersionNumber;
+FOUNDATION_EXPORT const unsigned char WCDBSwiftVersionString[];
 
