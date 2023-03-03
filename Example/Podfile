@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'BuzzWCDB_Example' do
+  pod 'BuzzWCDB', :path => '../'
+
+  target 'BuzzWCDB_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
