@@ -59,10 +59,14 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 
-  s.swift_version = '5'
+  # s.swift_version = '5'
   # s.dependency 'WCDBOptimizedSQLCipher', '~> 1.3.0'
   # s.dependency 'SQLiteRepairKit', '~> 1.3.0'
+  # s.dependency 'WCDBOptimizedSQLCipher', '1.2.1'
+  # s.dependency 'SQLiteRepairKit', '1.2.1'
+
+  s.swift_version = '4.2'
   s.dependency 'WCDBOptimizedSQLCipher', '1.2.1'
-  s.dependency 'SQLiteRepairKit', '1.2.1'
+  s.dependency 'SQLiteRepairKit', '1.2.2'
 
 end
