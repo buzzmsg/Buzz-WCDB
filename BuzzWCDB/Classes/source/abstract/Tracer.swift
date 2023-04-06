@@ -19,9 +19,6 @@
  */
 
 import Foundation
-//import SQLite3
-//import sqliterk
-//import sqlcipher
 
 final class Tracer {
     typealias SQLTracer = (String) -> Void // SQL

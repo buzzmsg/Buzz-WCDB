@@ -19,9 +19,6 @@
  */
 
 import Foundation
-//import SQLite3
-//import sqliterk
-//import sqlcipher
 
 public class Core: CoreRepresentable {
     final let recyclableHandlePool: RecyclableHandlePool
@@ -157,7 +154,7 @@ public class Core: CoreRepresentable {
     }
 }
 
-protocol CoreRepresentable: AnyObject {
+protocol CoreRepresentable: class {
     var tag: Tag? {get}
     var path: String {get}
 }

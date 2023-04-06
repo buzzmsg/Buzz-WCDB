@@ -38,4 +38,4 @@ public protocol ColumnDecodable: Decodable, ColumnCodableBase {
     init?(with value: FundamentalValue)
 }
 
-public typealias ColumnCodable = ColumnEncodable & ColumnDecodable
+public typealias ColumnCodable = ColumnCodableBase & ColumnEncodable & ColumnDecodable
