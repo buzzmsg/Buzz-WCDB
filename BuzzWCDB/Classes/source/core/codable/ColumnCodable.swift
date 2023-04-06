@@ -29,7 +29,7 @@ public protocol ColumnEncodable: Encodable, ColumnCodableBase {
     func archivedValue() -> FundamentalValue
 }
 public extension ColumnEncodable where Self: LiteralValueConvertible {
-    func asLiteralValue() -> LiteralValue {
+    public func asLiteralValue() -> LiteralValue {
         return LiteralValue(self)
     }
 }

@@ -106,8 +106,9 @@ extension Module {
         var bytes: Int32 = nBytes
         if pInput == nil {
             bytes = 0
-        }else if bytes < 0 {
-            bytes = Int32(strlen(pInput!))
+        }
+        if bytes < 0 {
+            bytes = Int32(strlen(pInput))
         }
 
         let cursorSize = MemoryLayout<Cursor>.size
